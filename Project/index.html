@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAVE USERS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<style>
+    label {
+        width: 120px; display: inline-block}
+    body {
+        background-color: lightgray}
+</style>
+
+</head>
+<body>
+
+<h1><span class="badge badge-secondary">Please enter your personal details and upload the file</span></h1>
+
+<form action="save.php" method="post" enctype="multipart/form-data">
+
+    <label>FIRST NAME</label><input type="text" name="name">
+        <br/>
+    <label>SECOND NAME</label><input type="text" name="surname">
+        <br/>
+    <label>SEX</label>
+    <input type="radio" name="sex" value="MALE"> MALE <input type="radio" name="sex" value="FEMALE"> FEMALE
+    <br/>
+    <label>CITY</label>
+        <select name="city">
+            <option>Kharkov</option>
+            <option>Moscow</option>
+            <option>Kiev</option>
+        </select>
+    <br/>
+    <br/>
+    <input type="file" name="file" class="btn btn-warning">
+    <br/>
+    <br/>
+    <button type="submit" class="btn btn-primary btn-lg">SEND</button>
+    <button type="reset" class="btn btn-primary btn-lg">RESET</button>
+</form>
+<br/>
+
+<a href="SaveList.php" class="btn btn-outline-secondary">Show downloaded files</a>
+
+</body>
+</html>
