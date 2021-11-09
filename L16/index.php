@@ -70,3 +70,20 @@ $st2->setCourse(1);
 $st2->setStipend(500);
 
 echo sprintf('%s'.' и '.'%s', $st1->getName(), $st2->getName());
+
+class Driver extends Worker {
+    private $driveExp;
+    private $category;
+
+    public function setDriveExp(int $driveExp) {
+        $this->driveExp = $driveExp;
+    }
+    public function setCategory(string $category) {
+        $this->category = $category;
+    }
+}
+
+$driver1 = new Driver();
+$driver1->setCategory('B');
+//var_dump($driver1);
+
