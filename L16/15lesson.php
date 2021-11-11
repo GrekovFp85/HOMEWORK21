@@ -69,7 +69,7 @@ $st2->setName('Василий');
 $st2->setCourse(1);
 $st2->setStipend(500);
 
-echo sprintf('%s'.' и '.'%s', $st1->getName(), $st2->getName());
+echo sprintf('%s'.'и'.'%s', $st1->getName(), $st2->getName());
 
 class Driver extends Worker {
     private $driveExp;
@@ -86,4 +86,3 @@ class Driver extends Worker {
 $driver1 = new Driver();
 $driver1->setCategory('B');
 //var_dump($driver1);
-
