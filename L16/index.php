@@ -1,7 +1,5 @@
 <?php
 
-
-
 class User {
     public $name;
     public $age;
@@ -26,24 +24,25 @@ class Builder {
 }
 
 
-$user1 = Builder::createUser('Alex', 18, 'male');
-$user2 = Builder::createUser('Olga', 21,'female');
-$user3 = Builder::createUser('Boris', 30,'male');
+//$user1 = Builder::createUser('Alex', 18, 'male');
+//$user2 = Builder::createUser('Olga', 21,'female');
+//$user3 = Builder::createUser('Boris', 30,'male');
 
-var_dump($user1, $user2, $user3);
+//var_dump($user1, $user2, $user3);
 
-//$list = [];
+$list = [];
 
-//$list[] = Builder::createUser('Alex', 18, 'male');
-//$list[] = Builder::createUser('Olga', 21,'female');
-//$list[] = Builder::createUser('Boris', 30,'male');
-
-//var_dump($list);
-
-echo "\n";
-echo Builder::$counter . "\n";
+$list[] = Builder::createUser('Alex', 18, 'male');
+$list[] = Builder::createUser('Olga', 21,'female');
+$list[] = Builder::createUser('Boris', 30,'male');
 
 
+}
+
+var_dump($list);
+
+//echo "\n";
+//echo Builder::$counter . "\n";
 
 
 
