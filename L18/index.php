@@ -1,5 +1,7 @@
 <?php
 
+namespace GFV;
+
 abstract class Figure {
 
     abstract function getSquare();
@@ -11,8 +13,7 @@ abstract class Figure {
     }
 }
 
-class Triangle extends Figure
-{
+class Triangle extends Figure {
 
     private $baseSideA;
     private $sideB;
@@ -39,7 +40,7 @@ class Triangle extends Figure
     }
 }
 
-$triangle = new Triangle(7,3,4,3);
+$triangle = new \GFV\Triangle(7,3,4,3);
 
 echo "Периметр: " . $triangle->getPerimeter() . "\n";
 echo "Площадь: " . $triangle->getSquare() . "\n";
@@ -67,7 +68,7 @@ class Rectangle extends Figure {
     }
 }
 
-//$rectangle = new Rectangle(7, 4);
+//$rectangle = new \GFV\Rectangle(7, 4);
 
 //echo $rectangle->getSquare() . "\n";
 //echo $rectangle->getPerimeter() . "\n";
@@ -93,7 +94,7 @@ class Square extends Figure {
     }
 }
 
-//$square = new Square(7);
+//$square = new \GFV\Square(7);
 
 //echo $square->getSquare() . "\n";
 //echo $square->getPerimeter() . "\n";
