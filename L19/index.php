@@ -7,7 +7,6 @@ spl_autoload_register(function ($f) {
     include $f . '.php';
 });
 
-
 $user = [];
 
 $user[] = new User('Vladimir', rand(1, 100), 'Kharkov');
